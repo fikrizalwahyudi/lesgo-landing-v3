@@ -1,0 +1,515 @@
+
+<section style="background-color: #424143;padding-top: 3%;padding-bottom: 2%;">
+    <form class="form-inline" action="" style=" margin-left: 10%;">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="search" placeholder="Cari kursus / vendor" style="width:300px">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="location" placeholder="Lokasi">
+        <select class="form-control mb-2 mr-sm-2" id="sel1" placeholder="Tingkat" style="width:150px;">
+            <option>Tingkat</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <button type="submit" class="btn btn-primary mb-2" style="background-color:  #2273c0;width: 130px;margin-right: 20px;"[routerLink]="['/result']" >Cari</button>
+        <h6 style="color:white;">Lebih Murah via LESGO!</h6>
+    </form>
+</section>
+<section style="background-color: #f1f1f1;padding-top:30px">
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    
+                    <article class="card-group-item">
+                        <header class="card-header text-center">
+                            <h6 class="title">Filter </h6>
+                        </header>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Category </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">52</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check1">
+                                        <label class="custom-control-label" for="Check1">Bahasa Indonesia</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">132</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check2">
+                                        <label class="custom-control-label" for="Check2">Matematika</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">17</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check3">
+                                        <label class="custom-control-label" for="Check3">Fisika</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">7</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check4">
+                                        <label class="custom-control-label" for="Check4">Other</label>
+                                </div> <!-- form-check.// -->
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Harga </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="Rp 0">
+                                    </div>
+                                    <div class="form-group col-md-6 text-right">
+                                        <label>Max</label>
+                                        <input type="number" class="form-control" placeholder="Rp 1,000">
+                                    </div>
+                                </div>
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                            <header class="card-header">
+                                <h6 class="title">Jarak </h6>
+                            </header>
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    </div>
+                                </div> <!-- card-body.// -->
+                            </div>
+                        </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Type </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">52</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check1">
+                                        <label class="custom-control-label" for="Check1">Akademik</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <!-- <span class="float-right badge badge-light round">132</span> -->
+                                        <input type="checkbox" class="custom-control-input" id="Check2">
+                                        <label class="custom-control-label" for="Check2">Non Akademik</label>
+                                </div> <!-- form-check.// -->
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Others </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">52</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check1">
+                                        <label class="custom-control-label" for="Check1">Samsung</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">132</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check2">
+                                        <label class="custom-control-label" for="Check2">Black berry</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">17</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check3">
+                                        <label class="custom-control-label" for="Check3">Samsung</label>
+                                </div> <!-- form-check.// -->
+                
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">7</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check4">
+                                        <label class="custom-control-label" for="Check4">Other Brand</label>
+                                </div> <!-- form-check.// -->
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </article> <!-- card-group-item.// -->
+                </div> <!-- card.// -->
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        <h5 style="text-decoration: line-through;">Rp 700.000</h5>
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success" [routerLink]="['/product-detail']">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 card" style="border-radius:0px">
+                        <div class="row">
+                            <div class="col-sm-4" style="padding:10px">
+                                    <img src="assets/img/rec-ef.png" alt="" style="width:180px;">
+                            </div>
+                            <div class="col-sm-8" style="padding:10px">
+                                    <h5>1 Month Les Private by LESGO</h5>
+                                    <p>Primagama</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Tingkat : SMA
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Lokasi : Jakarta  
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            Kursi : 15 Available
+                                        </div>
+                                        <div class="col-sm-6">
+                                            Dilihat : 562 kali  
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3 card text-center" style="border-radius:0px; padding:10px">
+                        <ngb-rating  [max]="5" [rate]="3" style="color:orange;margin-left:35%"></ngb-rating>
+                        <h3 style="color:orangered">Rp 300.000</h3>
+                        <button type="button" class="btn btn-success">Detail Produk</button>
+                    </div>
+                </div>
+                <br>
+                <ngb-pagination class="d-flex justify-content-center" [collectionSize]="70" [(page)]="page"></ngb-pagination>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-center" style="background-color: #f1f1f1;padding-top: 20px;padding-bottom: 50px;">
+    <h4>Trending</h4>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-ef.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Back to School </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                    <!-- <p class="card-text">Bahasa</p> -->
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-aritmatika.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Jarimatika </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Medan
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-ning.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> 3 Month Private Lesson Sempoa </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-jerman.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Kursus Bahasa Jerman 5 Bulan </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                Primagama
+                                <br>
+                                Jakarta
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 5,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-kanji.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Menulis Kanji </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+    <button type="button" class="btn btn-outline-success btn-lg">Lihat Product Lainnya</button>
+</section>

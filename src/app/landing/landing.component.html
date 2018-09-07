@@ -1,0 +1,441 @@
+<section>
+    <img src="assets/img/banner.png" alt="" style="width:100%;margin-top: 0.5%;margin-bottom: 0.5%;">
+</section>
+<section style="background-color: #424143;padding-top: 3%;padding-bottom: 2%;">
+    <form class="form-inline" action="" style=" margin-left: 10%;">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="search" placeholder="Cari kursus / vendor" style="width:300px">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="location" placeholder="Lokasi">
+        <select class="form-control mb-2 mr-sm-2" id="sel1" placeholder="Tingkat" style="width:150px;">
+            <option>Tingkat</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <button type="submit" class="btn btn-primary mb-2" style="background-color:  #2273c0;width: 130px;margin-right: 20px;" [routerLink]="['/result']">Cari</button>
+        <h6 style="color:white;">Lebih Murah via LESGO!</h6>
+    </form>
+</section>
+<section class="text-center" style="height: 120px;background-color: #f1f1f1;">
+    <img src="assets/img/text.png" alt="" style="margin-top:3%">
+    <br>
+    Akademik | Non Akademik
+    <hr style=" margin-top: 10px;">
+</section>
+
+<section class="text-center" style="background-color: #f1f1f1;padding-top: 20px;padding-bottom: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;"[routerLink]="['/cat-result']" >
+                <img class="card-img-top" src="assets/img/logo-bahasa.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <p class="card-text">Bahasa</p>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/logo-game.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <p class="card-text">Game</p>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/logo-film.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <p class="card-text">Film</p>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/logo-memasak.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <p class="card-text">Memasak</p>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/logo-basket.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <p class="card-text">Olahraga</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="text-center" style="background-color: #f1f1f1;padding-top: 20px;padding-bottom: 50px;">
+    <h4>Recommended</h4>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;" [routerLink]="['/product-detail']">
+                <img class="card-img-top" src="assets/img/rec-ef.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Back to School </p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                    <!-- <p class="card-text">Bahasa</p> -->
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-aritmatika.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Jarimatika </p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Medan
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-ning.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> 3 Month Private Lesson Sempoa </p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-jerman.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Kursus Bahasa Jerman 5 Bulan </p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                Primagama
+                                <br>
+                                Jakarta
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 5,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-kanji.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Menulis Kanji </p>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+    <button type="button" class="btn btn-outline-success btn-lg" [routerLink]="['/result']">Lihat Product Lainnya</button>
+    <hr style=" margin-top: 30px;">
+</section>
+<section class="text-center" style="background-color: #f1f1f1;padding-top: 0px;padding-bottom: 50px;">
+    <h4>Popular Search</h4>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-ef.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Back to School </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                    <!-- <p class="card-text">Bahasa</p> -->
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-aritmatika.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Jarimatika </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Medan
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-ning.png" alt="Card image">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> 3 Month Private Lesson Sempoa </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-jerman.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Kursus Bahasa Jerman 5 Bulan </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                Primagama
+                                <br>
+                                Jakarta
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 5,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/rec-kanji.png" alt="Card image" style="height: 135px;">
+                <div class="card-body" style="padding: 0;margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p style=" font-size: 10px; margin-bottom:5px"> Menulis Kanji </p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row text-left">
+                        <div class="col-sm-6">
+                            <p  style="font-size: 10px; margin-bottom:0px"> 
+                                EF
+                                <br>
+                                Kemang
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:-10px">
+                            <br>
+                            <!-- <ngb-rating [max]="5" [rate]="3" style="color:orange; "></ngb-rating> -->
+                            <p style="font-size:10px; margin-bottom:0px; color:orange">Rp 1,200,000</p>    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="text-center" style="background-color: #f1f1f1;padding-top: 0px;padding-bottom: 50px;">
+    <h4>Produk Baru</h4>
+    <br>
+    <div class="container card">
+        <div class="col-sm-12">
+            <div class="row" style="padding-bottom:10px;">
+                    <div class="col-sm-8">
+                        <div class="row">
+                                <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new1.png" alt="Card image">
+                                        
+                                    </div>
+                                    <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new2.png" alt="Card image">
+                                        
+                                    </div>
+                                    <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new3.png" alt="Card image">
+                                        
+                                    </div>
+                                    <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new4.png" alt="Card image">
+                                        
+                                    </div>
+                                    <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new5.png" alt="Card image">
+                                        
+                                    </div>
+                                    <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 20px;border-radius:  0px;">
+                                        <img class="card-img-top" src="assets/img/new6.png" alt="Card image">
+                                        
+                                    </div>
+                                
+                        </div>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                            <div class="card" style="width:200px;padding-top:10px;padding-left:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                                <img class="card-img-top" src="assets/img/new7.png" alt="Card image" style=" width: 210%; margin-left: -40px;">
+                                
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+    
+</section>
+<section class="text-center" style="background-color: #ffffff;padding-top: 15px;padding-bottom: 50px;">
+    <h4>Partners</h4>
+    <br>
+    <div class="container card"  style="border:0px">
+        <div class="row">
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/partner1.png" alt="Card image">
+                
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/partner2.png" alt="Card image">
+                
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/partner3.png" alt="Card image">
+                
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/partner4.png" alt="Card image" style="height:178px">
+                
+            </div>
+            <div class="card" style="width:200px;padding:10px;border: 0px;margin-right: 25px;border-radius:  0px;">
+                <img class="card-img-top" src="assets/img/partner5.png" alt="Card image" style="height:178px">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
